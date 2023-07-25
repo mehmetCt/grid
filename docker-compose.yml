@@ -23,12 +23,4 @@ services:
       - SE_NODE_MAX_SESSIONS=2
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
       - SE_NODE_SESSION_TIMEOUT=1000
-  chrome_video:
-    image: selenium/video:ffmpeg-4.3.1-20221219
-    volumes:
-      - /tmp/videos:/videos
-    depends_on:
-      - chrome
-    environment:
-      - DISPLAY_CONTAINER_NAME=chrome
-      - FILE_NAME=chrome_video.mp4
+
