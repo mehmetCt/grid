@@ -1,0 +1,1 @@
+ MORE NODE —-> 	docker-compose up --scale chrome=numberOfNode --remove-orphans 
